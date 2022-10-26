@@ -11,11 +11,17 @@ import {
 import move from "lodash-move";
 import Modal from "./Modal";
 import { FetchWords } from "../util/APIUtils.js";
-import expandIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/expand.png";
-import speakerIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/speaker.png";
-import saveIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/save.png";
-import checkIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/check.png";
-import collapseIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/collapse.png";
+
+const expandIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/expand.png";
+const speakerIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/speaker.png";
+const saveIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/save.png";
+const checkIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/check.png";
+const collapseIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/collapse.png";
 
 const CARD_COLORS = ["#266678", "#cb7c7a", " #36a18b", "#cda35f", "#747474"];
 

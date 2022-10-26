@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import { FetchWords } from "../util/APIUtils.js";
 
 import Backdrop from "./Backdrop";
-import refreshButton from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/refresh.png";
 import styles from "../index.css";
 import "./styles/quiz.css";
+
+const refreshButton =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/refresh.png";
 
 //animation features for quiz card
 const dropIn = {

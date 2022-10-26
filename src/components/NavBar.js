@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../index.css";
 import "./styles/navBar.css";
 import settingsIcon from "../../public/icons/settings.png";
-import savedIcon from "../../public/icons/saved.png";
-import quizIcon from "../../public/icons/quiz.png";
-import learnIcon from "../../public/icons/learn.png";
-import editIcon from "../../public/icons/edit.png";
+import savedIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/saved.png";
+import quizIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/quiz.png";
+import learnIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/learn.png";
+import editIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/edit.png";
 
 export default function NavBar({
   modalOpen,
@@ -13,13 +13,13 @@ export default function NavBar({
   welcomeModalOpen,
   setWelcomeModalOpen,
   page,
-  setPage
+  setPage,
 }) {
   return (
     <div className="nav-bar-body">
       <div
         style={{
-          borderBottom: page === 0 && "10px lightcoral solid"
+          borderBottom: page === 0 && "10px lightcoral solid",
         }}
         onClick={() => {
           setPage(0);
@@ -30,7 +30,7 @@ export default function NavBar({
       </div>
       <div
         style={{
-          borderBottom: page === 1 && "10px lightcoral solid"
+          borderBottom: page === 1 && "10px lightcoral solid",
         }}
         onClick={() => {
           setPage(1);
@@ -49,7 +49,7 @@ export default function NavBar({
       </div>
       <div
         style={{
-          borderBottom: page === 2 && "10px lightcoral solid"
+          borderBottom: page === 2 && "10px lightcoral solid",
         }}
         onClick={() => {
           setPage(2);

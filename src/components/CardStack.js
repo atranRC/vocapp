@@ -6,16 +6,16 @@ import {
   useMotionValue,
   useTransform,
   MotionSvg,
-  AnimatePresence
+  AnimatePresence,
 } from "framer-motion";
 import move from "lodash-move";
 import Modal from "./Modal";
 import { FetchWords } from "../util/APIUtils.js";
-import expandIcon from "../../public/icons/expand.png";
-import speakerIcon from "../../public/icons/speaker.png";
-import saveIcon from "../../public/icons/save.png";
-import checkIcon from "../../public/icons/check.png";
-import collapseIcon from "../../public/icons/collapse.png";
+import expandIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/expand.png";
+import speakerIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/speaker.png";
+import saveIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/save.png";
+import checkIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/check.png";
+import collapseIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/collapse.png";
 
 const CARD_COLORS = ["#266678", "#cb7c7a", " #36a18b", "#cda35f", "#747474"];
 
@@ -25,21 +25,21 @@ const SCALE_FACTOR = 0.05;
 const dropIn = {
   hidden: {
     x: "100vh",
-    opacity: 0
+    opacity: 0,
   },
 
   visible: {
     x: "0",
     opacity: 1,
     transition: {
-      type: "spring"
-    }
+      type: "spring",
+    },
   },
 
   exit: {
     x: "100vh",
-    opacity: 0
-  }
+    opacity: 0,
+  },
 };
 
 export const CardStack = ({
@@ -54,7 +54,7 @@ export const CardStack = ({
   savedWords,
   setSavedWords,
   learnedWords,
-  setLearnedWords
+  setLearnedWords,
 }) => {
   const [expandCard, setExpandCard] = React.useState(false);
 
@@ -77,7 +77,7 @@ export const CardStack = ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    height: "70vh"
+    height: "70vh",
   };
 
   //async function to fetch json data of words
@@ -116,7 +116,7 @@ export const CardStack = ({
                 backgroundColor: color,
                 cursor: canDrag ? "grab" : "auto",
                 x: x,
-                rotate: rotate
+                rotate: rotate,
               }}
               animate={
                 expandCard
@@ -126,13 +126,13 @@ export const CardStack = ({
 
                       scale: 1.3,
                       transition: {
-                        duration: 0.2
-                      }
+                        duration: 0.2,
+                      },
                     }
                   : {
                       top: index * -CARD_OFFSET,
                       scale: 0.9 - index * SCALE_FACTOR,
-                      zIndex: CARD_COLORS.length - index
+                      zIndex: CARD_COLORS.length - index,
                     }
               }
               drag={expandCard ? false : canDrag}
@@ -140,7 +140,7 @@ export const CardStack = ({
                 top: 3,
                 bottom: 3,
                 left: 0,
-                right: 0
+                right: 0,
               }}
               dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
               onDragEnd={() => moveToEnd(index)}

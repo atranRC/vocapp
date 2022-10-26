@@ -194,7 +194,7 @@
 #expand-button {
   width: 80px;
   height: 800px;
-  background-image: url("./public/icons/expand.png");
+  /*background-image: url("./public/icons/expand.png");*/
   background-size: cover;
   background-color: #eee;
 }

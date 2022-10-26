@@ -1,11 +1,16 @@
 import React from "react";
 import styles from "../index.css";
 import "./styles/navBar.css";
-import settingsIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/settings.png";
-import savedIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/saved.png";
-import quizIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/quiz.png";
-import learnIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/learn.png";
-import editIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/edit.png";
+const settingsIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/settings.png";
+const savedIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/saved.png";
+const quizIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/quiz.png";
+const learnIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/learn.png";
+const editIcon =
+  "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/edit.png";
 
 export default function NavBar({
   modalOpen,

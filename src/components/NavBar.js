@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../index.css";
 import "./styles/navBar.css";
-import settingsIcon from "../../public/icons/settings.png";
+import settingsIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/settings.png";
 import savedIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/saved.png";
 import quizIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/quiz.png";
 import learnIcon from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/learn.png";

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FetchWords } from "../util/APIUtils.js";
 
 import Backdrop from "./Backdrop";
-import refreshButton from "../../public/icons/refresh.png";
+import refreshButton from "https://raw.githubusercontent.com/atranRC/vocapp/main/public/icons/refresh.png";
 import styles from "../index.css";
 import "./styles/quiz.css";
 
@@ -11,21 +11,21 @@ import "./styles/quiz.css";
 const dropIn = {
   hidden: {
     x: "100vh",
-    opacity: 0
+    opacity: 0,
   },
 
   visible: {
     x: "0",
     opacity: 1,
     transition: {
-      type: "spring"
-    }
+      type: "spring",
+    },
   },
 
   exit: {
     x: "100vh",
-    opacity: 0
-  }
+    opacity: 0,
+  },
 };
 const CARD_COLORS = ["#266678", "#cb7c7a", " #36a18b", "#cda35f", "#747474"];
 const CORRECT_AUDIO =
@@ -83,7 +83,7 @@ export const Quiz = ({ children, learnedWords }) => {
         onClick={(e) => e.stopPropagation()}
         className="quiz"
         style={{
-          backgroundColor: CARD_COLORS[bgColor]
+          backgroundColor: CARD_COLORS[bgColor],
         }}
         variants={dropIn}
         initial="hidden"
@@ -100,7 +100,7 @@ export const Quiz = ({ children, learnedWords }) => {
                 transition: "0.2s",
                 backgroundColor:
                   selectedOption &&
-                  (selectedOption === answer ? "lightgreen" : "red")
+                  (selectedOption === answer ? "lightgreen" : "red"),
               }}
             >
               {question}
@@ -118,7 +118,7 @@ export const Quiz = ({ children, learnedWords }) => {
                       color:
                         selectedOption &&
                         selectedOption === option &&
-                        (option === answer ? "lightgreen" : "red")
+                        (option === answer ? "lightgreen" : "red"),
                     }}
                   >
                     {index + 1}. {option}

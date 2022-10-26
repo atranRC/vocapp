@@ -1,0 +1,37 @@
+.nav-bar-body {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 5px;
+  margin-top: 6rem;
+
+  background-color: blanchedalmond;
+
+  border-radius: 10px;
+  border: px black solid;
+}
+
+.nav-bar-item {
+  scale: 0.7;
+  align-items: center;
+  border: px black solid;
+}
+
+.nav-bar-item:hover {
+  opacity: 1;
+  scale: 1;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+@media (max-width: 20rem) {
+  .nav-bar-body {
+    scale: 0.5;
+  }
+}
+
+@media (max-width: 26rem) {
+  .nav-bar-body {
+    scale: 0.8;
+  }
+}

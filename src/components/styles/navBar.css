@@ -8,13 +8,13 @@
   background-color: blanchedalmond;
 
   border-radius: 10px;
-  border: px black solid;
+  /*border: px black solid;*/
 }
 
 .nav-bar-item {
   scale: 0.7;
   align-items: center;
-  border: px black solid;
+  /*border: px black solid;*/
 }
 
 .nav-bar-item:hover {

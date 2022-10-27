@@ -83,7 +83,7 @@ const Modal = ({ handleClose, children }) => {
           });
           console.log("user created");
         }
-
+        //commit here
         console.log(u.user.uid);
       })
       .catch((err) => console.log(err));

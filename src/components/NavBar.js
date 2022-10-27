@@ -63,6 +63,14 @@ export default function NavBar({
       >
         <img alt="quiz" src={quizIcon} />
       </div>
+      <div
+        onClick={() => {
+          setModalOpen(true)
+        }}
+        className="nav-bar-item"
+      >
+        <img alt="quiz" src={settingsIcon} />
+      </div>
     </div>
   );
 }

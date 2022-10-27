@@ -61,7 +61,7 @@ const SignIn = ({ handleSignIn }) => {
     </div>
   );
 };
-
+//
 const Modal = ({ handleClose, children }) => {
   const signInWithGoogle = () => {
     const provider = new GoogleAuthProvider();
